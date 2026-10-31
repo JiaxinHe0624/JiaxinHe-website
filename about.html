@@ -1,34 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Me</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/styles.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Introduce</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=ZCOOL+KuaiLe&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
-    <header>
-        < img src="images/profile.jpg" alt="Profile photo" class="avatar">
-        <h1>Jiaxin He</h1>
-        <nav>
-            <a href=" ">Home</a >
-            <a href="about.html">About</a >
-            <a href="index.html#skills">Skills</a >
-            <a href="index.html#contact">Contact</a >
-        </nav>
-    </header>
+    <!-- banner -->
+    <div class="banner">
+        <div class="banner-cloud left"></div>
+        <div class="banner-cloud right"></div>
+        <h1 class="banner-title">welcome!</h1>
+        <p class="banner-subtitle">My Personal Profile</p >
+        <div class="decoration-star">✦</div>
+        <div class="decoration-star small">✧</div>
+    </div>
 
-    <section class="about">
-        <h2>More About Me</h2>
-        <p>I’m studying at Adelaide University. I like learning new tech and building small web projects. In my free time, I also read and practise coding. I hope to make more interesting websites in the future.</p >
-    </section>
+    <!-- Introduce -->
+    <nav class="navbar">
+        <a href="index.html" class="nav-item">Home</a >
+        <a href="about.html" class="nav-item active">Introduce</a >
+        <a href="index.html#skills" class="nav-item">Ability</a >
+        <a href="index.html#hobbies" class="nav-item">Hobbies</a >
+        <a href="index.html#contact" class="nav-item">Contact</a >
+    </nav>
 
-    <footer>
-        <p>&copy; 2026 Jiaxin He</p >
-        <a href="https://github.com" target="_blank">My GitHub</a >
+    <main class="container">
+        <section class="intro-card">
+            <h2>More About Me</h2>
+            <p>
+                I am a computer‑science sophomore. Besides study, I spend much time taking part in volunteer activities.
+                Volunteering teaches me responsibility and communication skills.
+            </p >
+            <p>
+                In my spare time, I relax by reading and playing games with friends.
+                I keep learning programming and hope I can improve myself step by step.
+            </p >
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-wave"></div>
+        <p>© 2026 Jiaxin He | <a href="https://github.com" target="_blank">My GitHub</a ></p >
     </footer>
 </body>
 </html>

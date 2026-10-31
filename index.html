@@ -1,63 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Profile</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Personal Profile</title>
     <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-    <!-- 相对路径css，符合PPT要求 -->
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=ZCOOL+KuaiLe&display=swap" rel="stylesheet" />
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
-    <header>
-        < img src="images/profile.jpg" alt="Profile photo" class="avatar">
-        <h1>Jiaxin He</h1>
-        <nav>
-            <a href=" ">Home</a >
-            <a href="about.html">About</a >
-            <a href="#skills">Skills</a >
-            <a href="#contact">Contact</a >
-        </nav>
-    </header>
-
-    <section class="about">
-        <h2>About Me</h2>
-        <p>I am a student at Adelaide University. I enjoy learning web development and programming. I keep practicing HTML and CSS to build clean and simple websites.</p >
-    </section>
-
-    <section id="skills" class="skills">
-        <h2>My Skills</h2>
-        <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>VS Code</li>
-            <li>GitHub</li>
-            <li>Problem Solving</li>
-        </ul>
-    </section>
-
-    <section id="contact" class="contact">
-        <h2>Contact Me</h2>
-        <form>
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" rows="4" required></textarea>
-
-            <button type="submit">Submit</button>
-        </form>
-    </section>
-
-    <footer>
-        <p>&copy; 2026 Jiaxin He</p >
-        <a href="https://github.com" target="_blank">My GitHub</a >
+    <!-- Banner -->
+    <div class="banner">
+        <div class="banner-cloud left"></div>
+        <div class="banner-cloud right"></div>
+        <h1 class="banner-title">welcome!</h1>
+        <p class="banner-subtitle">My Personal Profile</p >
+        <div class="decoration-star">✦</div>
+        <div class="decoration-star small">✧</div>
+    </div>
+    <!-- cotent -->
+    <nav class="navbar">
+        <a href="index.html" class="nav-item active">Home</a >
+        <a href="about.html" class="nav-item">Introduce</a >
+        <a href="#skills" class="nav-item">Ability</a >
+        <a href="#hobbies" class="nav-item">Hobbies</a >
+        <a href="#contact" class="nav-item">Contact</a >
+    </nav>
+    <main class="container">
+        <!-- First part -->
+        <section class="profile-section">
+            <div class="avatar-card">
+                < img src="images/profile.jpg" alt="Profile Photo" class="avatar" />
+                <div class="avatar-ring"></div>
+            </div>
+            <div class="info-card">
+                <h2>Personal Information</h2>
+                <ul class="info-list">
+                    <li><span>Name:</span>Jiaxin He</li>
+                    <li><span>Student ID:</span>2518040202</li>
+                    <li><span>Major:</span>Computer</li>
+                    <li><span>University:</span>Xi'an University of Architecture and Technology</li>
+                    <li><span>Hobby:</span>Reading & Games</li>
+                </ul>
+            </div>
+            <div class="intro-card">
+                <h2>Introduce</h2>
+                <p>
+                    Hello!I am a sophomore majoring in computer science and technology at Ander College of Xi'an University of Architecture and Technology. I usually like to participate in some volunteer activities to enrich my after‑school life. I also like to play games with my friends.
+                </p >
+            </div>
+        </section>
+        <!-- Second part -->
+        <section id="skills" class="skills-section">
+            <h2 class="section-title">Ability</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="skill-icon">💻</div>
+                    <h3>Computer skills</h3>
+                    <p>Know some basic programming languages</p >
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">🔗</div>
+                    <h3>Social skills</h3>
+                    <p>Participate in many volunteer activities and have good social skills.</p >
+                </div>
+            </div>
+        </section>
+        <!-- Third part -->
+        <section id="hobbies" class="hobbies-section">
+            <h2 class="section-title">Hobbies</h2>
+            <div class="hobbies-grid">
+                <div class="hobby-card">
+                    <div class="hobby-overlay">
+                        <h3>Reading</h3>
+                        <p>I like reading books in my spare time.</p >
+                    </div>
+                </div>
+                <div class="hobby-card">
+                    <div class="hobby-overlay">
+                        <h3>Games</h3>
+                        <p>Play many different games to help enjoy Sense of accomplishment.</p >
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Four -->
+        <section id="contact" class="contact-section">
+            <h2 class="section-title">Contact Me</h2>
+            <form class="contact-form">
+                <div class="form-row">
+                    <div class="form-item">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" placeholder="Enter your name" />
+                    </div>
+                    <div class="form-item">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Enter your email" />
+                    </div>
+                </div>
+                <label for="message">Message</label>
+                <textarea id="message" name="message" placeholder="Write your message here..."></textarea>
+                <button type="submit" class="submit-btn">Submit</button>
+            </form>
+        </section>
+    </main>
+    <!-- End -->
+    <footer class="footer">
+        <div class="footer-wave"></div>
+        <p>© 2026 Jiaxin He | <a href="https://github.com" target="_blank">My GitHub</a ></p >
     </footer>
 </body>
 </html>
